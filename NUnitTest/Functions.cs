@@ -13,7 +13,7 @@ namespace NUnitTest
         {
             return a / b;
         }
-        
+
         // Hàm kiểm tra số nguyên tố
         public static bool IsPrime(int num)
         {
@@ -122,8 +122,6 @@ namespace NUnitTest
         }
         // Hàm kiểm tra số thập phân
 
-
-
         public static bool IsDecimal(string str)
 
         {
@@ -131,6 +129,19 @@ namespace NUnitTest
             if (string.IsNullOrEmpty(str)) return false;
 
             return double.TryParse(str, out _) && str.Contains(".");
+        }
+
+        static void Main(string[] args)
+        {
+            // Example usage of the functions
+            Console.WriteLine("Is 5 prime? " + IsPrime(5)); // True
+            Console.WriteLine("Is 4 even? " + IsEven(4)); // True
+            Console.WriteLine("Fibonacci of 10: " + Fibonacci(10)); // 55
+            Console.WriteLine("Is 153 an Armstrong number? " + IsArmstrongNumber(153)); // True
+            Console.WriteLine("Is 6 a perfect number? " + IsPerfectNumber(6)); // True
+            Console.WriteLine("Is 121 a palindrome? " + IsPalindrome(121)); // True
+            Console.WriteLine("Grade for score 85: " + GradeStudent(85)); // B
+            Console.WriteLine("Is '3.14' a decimal? " + IsDecimal("3.14")); // True
         }
     }
 }
