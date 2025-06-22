@@ -114,5 +114,6 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\NUnitTest\NUnitTest.csproj" />
+    <ProjectReference Include="..\UnitTest\UnitTest.csproj" />
   </ItemGroup>
 </Project>
