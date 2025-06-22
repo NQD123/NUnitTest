@@ -7,12 +7,12 @@
   IgnorableNamespaces="uap rescap">
 
   <Identity
-    Name="WAPPackage"
+    Name="f28062d5-78e2-4384-865f-a6408d0506b0"
     Publisher="CN=nguye"
-    Version="1.0.6.0" />
+    Version="1.0.0.0" />
 
   <Properties>
-    <DisplayName>WAPProject</DisplayName>
+    <DisplayName>WAPPro</DisplayName>
     <PublisherDisplayName>nguye</PublisherDisplayName>
     <Logo>Images\StoreLogo.png</Logo>
   </Properties>
@@ -31,15 +31,13 @@
       Executable="$targetnametoken$.exe"
       EntryPoint="$targetentrypoint$">
       <uap:VisualElements
-        DisplayName="WAPProject"
-        Description="WAPProject"
+        DisplayName="WAPPro"
+        Description="WAPPro"
         BackgroundColor="transparent"
         Square150x150Logo="Images\Square150x150Logo.png"
         Square44x44Logo="Images\Square44x44Logo.png">
         <uap:DefaultTile Wide310x150Logo="Images\Wide310x150Logo.png" />
         <uap:SplashScreen Image="Images\SplashScreen.png" />
-        <uap:InitialRotationPreference>
-          <uap:Rotation Preference="landscape"/></uap:InitialRotationPreference>
       </uap:VisualElements>
     </Application>
   </Applications>
