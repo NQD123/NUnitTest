@@ -76,9 +76,6 @@ jobs:
     # Add  MSBuild to the PATH: https://github.com/microsoft/setup-msbuild
     - name: Setup MSBuild.exe
       uses: microsoft/setup-msbuild@v2
-      
-    - name: Add Windows Application Packaging workload
-      run: choco install microsoft-windows-sdk-desktopbridge --version=10.0.17763.132
 
     # Execute all unit tests in the solution
     - name: Execute unit tests
