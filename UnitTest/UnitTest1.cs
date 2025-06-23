@@ -10,7 +10,7 @@ namespace UnitTest
         [TestCase(2,true)]
         [TestCase(5,true)]
         [TestCase(4,false)]
-        [TestCase(7,false)]
+        [TestCase(6,false)]
         public void TestIsPrimeGivenRightArgumentReturnsWell(int n, bool expected)
         {
             bool actual = Functions.IsPrime(n);
